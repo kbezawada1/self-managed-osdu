@@ -52,7 +52,7 @@ ARG OSDU_VERSION=v0.11.0
 RUN bash /tmp/library-scripts/osdu-infra.sh
 
 # Install Terraform, tflint, Terragrunt
-ARG TERRAFORM_VERSION=0.14.11
+ARG TERRAFORM_VERSION=1.1.1
 ARG TFLINT_VERSION=0.34.1
 ARG TERRAGRUNT_VERSION=0.35.16
 RUN bash /tmp/library-scripts/terraform-debian.sh "${TERRAFORM_VERSION}" "${TFLINT_VERSION}" "${TERRAGRUNT_VERSION}"
