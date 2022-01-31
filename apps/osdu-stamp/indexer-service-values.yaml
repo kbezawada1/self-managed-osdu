@@ -7,10 +7,10 @@ metadata:
 spec:
   values:
     ingress:
-      dns: osdu-self-dpldccaa-s2ph-gw.eastus.cloudapp.azure.com
+      dns: osdu-self-dplcfgfg-tyq1-gw.eastus.cloudapp.azure.com
     configuration:
     - service: indexer
-      repository: osduselfcpldcc28ducr.azurecr.io/indexer
+      repository: osduselfcplcfg8hkbcr.azurecr.io/indexer
       path: /api/indexer/v2/*
       probe:
         path: /api/indexer/v2/swagger-ui.html
