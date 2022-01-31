@@ -9,10 +9,10 @@ spec:
     azure:
       tenant: 72f988bf-86f1-41af-91ab-2d7cd011db47
       subscription: 2e458de2-af10-484c-a5a5-6c259d9a907f
-      resourcegroup: osdu-self-cpldccaa-28du-rg
-      identity: osdu-self-cpldccaa-28du-osdu-identity
-      identity_id: 076ca186-4cd8-4dc9-8bce-139e5635bd78
-      keyvault: osdu-self-cpldcc-28du-kv
+      resourcegroup: osdu-self-cplcfgfg-8hkb-rg
+      identity: osdu-self-cplcfgfg-8hkb-osdu-identity
+      identity_id: c2412411-4f07-44dc-9847-960243484d9c
+      keyvault: osdu-self-cplcfg-8hkb-kv
       appid: f78ba065-2926-4df4-a2a2-c8cd2657c8dd
     image:
-      repository: osduselfcpldcc28ducr.azurecr.io
+      repository: osduselfcplcfg8hkbcr.azurecr.io
