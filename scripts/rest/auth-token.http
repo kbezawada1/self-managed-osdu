@@ -4,7 +4,7 @@
 @login_base = login.microsoftonline.com/{{TENANT_ID}}
 @oauth_token_host = {{login_base}}/oauth2/v2.0/token
 @scopes = {{CLIENT_ID}}/.default openid profile offline_access
-@AUTH_CODE =
+@AUTH_CODE = 0.ARoAv4j5cvGGr0GRqy180BHbR2Wgi_cmKfRNoqLIzSZXyN0aAOQ.AQABAAIAAAD--DLA3VO7QrddgJg7Wevr9Dw3foDnzSqiAIclk2DDJsmMEgHQxyKXzhqRfxk5PxpcHTGIXoYcl66jsDjWB5NHKWa75adHPMlC7WoFjxQdWP5gNRbMBNkzAhGhz2vOoQOqsvqUR9PjjMOfcei-z-dLQqQ6j3lejfIyh46qab0bSyha1WpESiBDxCoQIgAiMUb58-A9P-1Hu5H7EgucFWbklhdMzgFHhyKIQlCh13RIzxIzbMUPAK3853rgvAHLIAthYIq83Nu33gRPjbN0PMYQkNcXqLyn-7p8Djvwp06OrMfIjafDoKNvYoCuWtP39g2BJswAkCN8AIWqHHU3mgkBcm4rN4ezd4YR-9lGHp2KjbzLnkl5Hk1nZ4pEOlWXsS1IoDGCEWlykFs_8JKs_IwSKPwUeRfZUceQR1nP2xrdzcMn5u-d7A7fDt1dhpr3C083kugeu7_ljw4KEblpzG3W73Uy8cFMdXdFG0tbCPmpXdVHgicysKLKUk9jhxPVs4iwOhGMmNBricle-2qhcDjSFMsPdcLUpNHgN0Lw5mzs79XM4BcJ7eKH7ws6CDYPMUyR5sbiQL5kFS6MRARMpJ5M30-aWLGQz-QLbckopnEMGxc39dTJRTyZYZSDS10R4IpdSMd0qdGyRaoIpZ-9KXc0AT8BmjHkB10405HODfCJINryivWB9NpfFA5k-WCeu-kl0NFuUM7n_45BabuvVd14lR52HCLZwLlWg5rU-guXx2VXZNmB7KGjSIKF8ALg-vOBOgAjpqMFb--IILnONUHAIAA
 
 # -----------------------
 # OAUTH  authorization_code
