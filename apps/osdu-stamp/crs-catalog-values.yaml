@@ -7,10 +7,10 @@ metadata:
 spec:
   values:
     ingress:
-      dns: osdu-self-dplcfgfg-tyq1-gw.eastus.cloudapp.azure.com
+      dns: osdu-self-dplbfih-33mp-gw.westeurope.cloudapp.azure.com
     configuration:
     - service: crs-catalog
-      repository: osduselfcplcfg8hkbcr.azurecr.io/crs-catalog
+      repository: osduselfcplbfi6jescr.azurecr.io/crs-catalog
       path: /api/crs/catalog/*
       probe:
         path: /api/crs/catalog/swagger-ui.html
