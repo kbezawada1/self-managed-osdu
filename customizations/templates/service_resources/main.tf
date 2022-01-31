@@ -269,7 +269,7 @@ resource "azurerm_role_assignment" "system_storage_data_contributor" {
 # Network
 #-------------------------------
 module "network" {
-  source = "git::https://github.com/danielscholl-terraform/module-virtual-network?ref=v1.0.0"
+  source = "github.com/danielscholl/iac-terraform.git//modules/network?ref=v1.0.0"
 
   name                = local.vnet_name
   resource_group_name = azurerm_resource_group.main.name
@@ -366,7 +366,7 @@ resource "azurerm_role_assignment" "agic_app_gw_mi" {
 # Azure AKS
 #-------------------------------
 module "aks" {
-  source     = "git::https://github.com/danielscholl-terraform/module-aks?ref=v1.0.0"
+  source     = "github.com/danielscholl/iac-terraform.git//modules/aks?ref=v1.0.0"
   depends_on = [module.network]
 
   name                       = local.aks_cluster_name
