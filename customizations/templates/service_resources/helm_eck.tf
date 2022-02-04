@@ -33,7 +33,7 @@ resource "kubernetes_namespace" "eck" {
   depends_on = [module.aks]
 }
 
-resource "helm_release" "eck" {
+resource "helm_release" "eck-operator" {
   name       = local.helm_eck_name
   repository = local.helm_eck_repo
   chart      = "eck-operator"
