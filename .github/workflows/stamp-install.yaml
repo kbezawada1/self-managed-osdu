@@ -1212,7 +1212,7 @@ jobs:
                   value: "http://policy/api/policy/v1"
                 - name: azure_istioauth_enabled
                   value: "true"
-                - name: ELASTIC_DISABLE_CERTIFICATE_TRUST
+                - name: SECURTIY_HTTPS_CERTIFICATE_TRUST
                   value: "true"
                 - name: azure_activedirectory_AppIdUri
                   value: "api://$(az keyvault secret show --id https://${ENV_VAULT}.vault.azure.net/secrets/aad-client-id --query value -otsv)"
