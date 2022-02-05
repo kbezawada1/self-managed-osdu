@@ -10,7 +10,7 @@ spec:
   http:
     tls:
       selfSignedCertificate:
-        disabled: true
+        disabled: false
     service:
       spec:
         type: ClusterIP
