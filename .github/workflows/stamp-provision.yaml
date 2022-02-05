@@ -495,7 +495,7 @@ jobs:
 
             az storage entity insert --account-name $STORAGE_NAME --account-key $STORAGE_KEY \
                 --if-exists replace --table-name $TABLE \
-                --entity PartitionKey=opendes RowKey=elastic-ssl-enabled sensitive=false value=shared
+                --entity PartitionKey=opendes RowKey=elastic-ssl-enabled sensitive=false value=false
 
             az storage entity insert --account-name $STORAGE_NAME --account-key $STORAGE_KEY \
                 --if-exists replace --table-name $TABLE \
