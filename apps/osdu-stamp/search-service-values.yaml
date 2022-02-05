@@ -67,7 +67,7 @@ spec:
         value: "http://policy/api/policy/v1"
       - name: azure_istioauth_enabled
         value: "true"
-      - name: ELASTIC_DISABLE_CERTIFICATE_TRUST
+      - name: SECURTIY_HTTPS_CERTIFICATE_TRUST
         value: "true"
       - name: azure_activedirectory_AppIdUri
         value: "api://f78ba065-2926-4df4-a2a2-c8cd2657c8dd"
