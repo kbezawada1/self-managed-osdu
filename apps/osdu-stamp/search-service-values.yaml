@@ -69,6 +69,8 @@ spec:
         value: "true"
       - name: azure_activedirectory_AppIdUri
         value: "api://f78ba065-2926-4df4-a2a2-c8cd2657c8dd"
+      - name: ELASTIC_SSL_ENABLED
+        value: "false"
       - name: KEYVAULT_URI
         config:
           name: osdu-svc-config
