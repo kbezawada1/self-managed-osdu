@@ -7,10 +7,10 @@ metadata:
 spec:
   values:
     ingress:
-      dns: osdu-self-dplcibed-4qdb-gw.westeurope.cloudapp.azure.com
+      dns: osdu-self-dplcbfgf-k7m8-gw.westeurope.cloudapp.azure.com
     configuration:
     - service: legal
-      repository: osduselfcplcib9y51cr.azurecr.io/legal
+      repository: osduselfcplcbf0llgcr.azurecr.io/legal
       path: /api/legal/v1/*
       probe:
         path: /actuator/health

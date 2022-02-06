@@ -7,10 +7,10 @@ metadata:
 spec:
   values:
     ingress:
-      dns: osdu-self-dplcibed-4qdb-gw.westeurope.cloudapp.azure.com
+      dns: osdu-self-dplcbfgf-k7m8-gw.westeurope.cloudapp.azure.com
     configuration:
     - service: partition
-      repository: osduselfcplcib9y51cr.azurecr.io/partition
+      repository: osduselfcplcbf0llgcr.azurecr.io/partition
       path: /api/partition/v1/*
       probe:
         path: /actuator/health

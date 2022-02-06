@@ -7,10 +7,10 @@ metadata:
 spec:
   values:
     ingress:
-      dns: osdu-self-dplcibed-4qdb-gw.westeurope.cloudapp.azure.com
+      dns: osdu-self-dplcbfgf-k7m8-gw.westeurope.cloudapp.azure.com
     configuration:
     - service: search
-      repository: osduselfcplcib9y51cr.azurecr.io/search
+      repository: osduselfcplcbf0llgcr.azurecr.io/search
       path: /api/search/v2/*
       probe:
         path: /api/search/v2/swagger-ui.html
@@ -42,7 +42,7 @@ spec:
       - name: ACCEPT_HTTP
         value: "true"
       - name: APPLICATIONINSIGHTS_CONNECTION_STRING
-        value: "InstrumentationKey=ee5011a2-053b-47ca-bc23-4231d22b3e26"
+        value: "InstrumentationKey=6e9ac076-fa4a-409a-82bb-2330a1d57568"
       - name: cosmosdb_database
         value: "osdu-db"
       - name: entitlements_service_endpoint
@@ -67,10 +67,10 @@ spec:
         value: "http://policy/api/policy/v1"
       - name: azure_istioauth_enabled
         value: "true"
+      # - name: ELASTIC_SSL_ENABLED
+      #   value: "false"
       - name: azure_activedirectory_AppIdUri
         value: "api://f78ba065-2926-4df4-a2a2-c8cd2657c8dd"
-      - name: ELASTIC_SSL_ENABLED
-        value: "false"
       - name: KEYVAULT_URI
         config:
           name: osdu-svc-config
