@@ -57,3 +57,10 @@ module "elasticsearch" {
   cpu              = each.value.cpu
   memory           = each.value.memory
 }
+
+module "secret" {
+  depends_on = [module.elasticsearch]
+
+  for_each = local.elasticsearch
+  namespace        = each.key
+}
