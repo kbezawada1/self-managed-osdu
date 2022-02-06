@@ -47,20 +47,18 @@ module "elasticsearch" {
   depends_on = [helm_release.eck-operator]
   source = "../../../modules/providers/azure/elasticsearch"
 
-  for_each = local.elasticsearch
-
   create_namespace = true
-  namespace        = each.key
-  agent_pool       = each.value.agent_pool
-  node_count       = each.value.node_count
-  storage          = each.value.storage
-  cpu              = each.value.cpu
-  memory           = each.value.memory
+  namespace = "elastic-instance"
+  agent_pool = "internal"
+  node_count = 3
+  storage    = 128
+  cpu        = 2
+  memory     = 8
 }
 
 module "secret" {
   depends_on = [module.elasticsearch]
+  source = "../../../modules/providers/azure/kubernetes-secret"
 
-  for_each = local.elasticsearch
-  namespace        = each.key
+  namespace = "elastic-instance"
 }
