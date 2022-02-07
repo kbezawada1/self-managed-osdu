@@ -1,7 +1,7 @@
 
 data "kubernetes_secret" "secret" {
   metadata {
-    name = "elasticsearch-es-elastic-user"
+    name      = var.name
     namespace = var.namespace
   }
 }
