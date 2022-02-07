@@ -178,6 +178,7 @@ variable "elasticsearch_username" {
 variable "elasticsearch_password" {
   type        = string
   description = "password for elasticsearch cluster"
+  default     = null
 }
 
 

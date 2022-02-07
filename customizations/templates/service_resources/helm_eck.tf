@@ -60,5 +60,6 @@ module "elastic_user_secret" {
   depends_on = [module.elasticsearch]
   source     = "../../../modules/providers/azure/kubernetes-secret"
 
+  name      = "elasticsearch-es-elastic-user"
   namespace = "elastic-instance"
 }

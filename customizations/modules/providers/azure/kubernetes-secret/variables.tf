@@ -9,9 +9,3 @@ variable "namespace" {
   description = "The namespace of the secret to retrieve"
   default     = "elastic-instance"
 }
-
-variable "data_name" {
-  type        = string
-  description = "The data name of the secret to retrieve"
-  default     = "elastic"
-}
