@@ -166,11 +166,13 @@ variable "sb_topics" {
 variable "elasticsearch_endpoint" {
   type        = string
   description = "endpoint for elasticsearch cluster"
+  default     = "http://elasticsearch-es-http.elastic-instance.svc.cluster.local:9200"
 }
 
 variable "elasticsearch_username" {
   type        = string
   description = "username for elasticsearch cluster"
+  default     = "elastic"
 }
 
 variable "elasticsearch_password" {

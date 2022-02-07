@@ -45,20 +45,20 @@ resource "helm_release" "eck-operator" {
 
 module "elasticsearch" {
   depends_on = [helm_release.eck-operator]
-  source = "../../../modules/providers/azure/elasticsearch"
+  source     = "../../../modules/providers/azure/elasticsearch"
 
   create_namespace = true
-  namespace = "elastic-instance"
-  agent_pool = "internal"
-  node_count = 3
-  storage    = 128
-  cpu        = 2
-  memory     = 8
+  namespace        = "elastic-instance"
+  agent_pool       = "internal"
+  node_count       = 3
+  storage          = 128
+  cpu              = 2
+  memory           = 8
 }
 
-module "secret" {
+module "elastic_user_secret" {
   depends_on = [module.elasticsearch]
-  source = "../../../modules/providers/azure/kubernetes-secret"
+  source     = "../../../modules/providers/azure/kubernetes-secret"
 
   namespace = "elastic-instance"
 }
